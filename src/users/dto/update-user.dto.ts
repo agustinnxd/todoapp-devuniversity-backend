@@ -5,5 +5,6 @@ export const updateUserSchema = z
         name: z.string().optional(),
         email: z.string().email().optional(),
     })
+    
 export type UpdateUserDto = z.infer<typeof updateUserSchema>
 
